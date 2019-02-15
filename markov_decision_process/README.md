@@ -37,7 +37,7 @@ input.txt
 2,0
 0,0
 
-Output.txt
+output.txt
 95
 
 For example, say you have a 3x3 grid, as follows, with 1 car in start position 1,0
