@@ -10,7 +10,7 @@ The code consists of two parts:
 2. Simulating the moves of a car by 10 random seeds. 
 The output is average profit earned in simulation for each car. 
 
-#Input 
+# Input 
 The file input.txt in the current directory of your program will be formatted
 as follows:
 First line: strictly positive 32-bit integer s, size of grid [grid is a square of size sxs]
@@ -22,20 +22,12 @@ car
 Next n lines: 32-bit integer x, 32-bit integer y, denoting the terminal location of
 each car
 
-#Output 
+# Output 
 
 n lines: 32-bit integer, denoting the mean money earned in simulation for each
 car, integer result of floor operation
 
 # Example
-
-For example, say you have a 3x3 grid, as follows, with 1 car in start position 1,0
-(green):
-![alt text](https://github.com/chethanabhaskara/aritficial_intelligence/blob/master/markov_decision_process/city_grid.png)
-
-You determine that based on the locations of certain obstacles and people, you
-should move in these directions in each cell:
-![alt text](https://github.com/chethanabhaskara/aritficial_intelligence/blob/master/markov_decision_process/max_utility_path.png)
 
 input.txt
 3
@@ -47,4 +39,13 @@ input.txt
 
 Output.txt
 95
+
+For example, say you have a 3x3 grid, as follows, with 1 car in start position 1,0
+(green):
+![alt text](https://github.com/chethanabhaskara/aritficial_intelligence/blob/master/markov_decision_process/city_grid.png)
+
+You determine that based on the locations of certain obstacles and people, you
+should move in these directions in each cell:
+![alt text](https://github.com/chethanabhaskara/aritficial_intelligence/blob/master/markov_decision_process/max_utility_path.png)
+
 
