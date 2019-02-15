@@ -29,6 +29,14 @@ car, integer result of floor operation
 
 # Example
 
+For example, say you have a 3x3 grid, as follows, with 1 car in start position 1,0
+(green):
+![alt text](https://github.com/chethanabhaskara/aritficial_intelligence/blob/master/markov_decision_process/city_grid.png)
+
+You determine that based on the locations of certain obstacles and people, you
+should move in these directions in each cell:
+![alt text](https://github.com/chethanabhaskara/aritficial_intelligence/blob/master/markov_decision_process/max_utility_path.png)
+
 input.txt
 3
 1
