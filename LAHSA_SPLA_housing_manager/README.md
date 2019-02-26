@@ -1,4 +1,4 @@
-# Effiency manager for LAHSA and SPLA shelters 
+# Efficiency manager for LAHSA and SPLA shelters 
 
 Goal: This project aims to provide an approach to efficient resource allocation that must divide between entities with different constraints. On considering the entities as two competing agents, the each entity assures to maximize it's efficient by picking suitable applicants. 
 
