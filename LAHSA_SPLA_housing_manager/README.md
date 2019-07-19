@@ -1,9 +1,11 @@
-# Efficiency manager for LAHSA and SPLA shelters 
+# AI based automated home allocator 
 
-Goal: This project aims to provide an approach to efficient resource allocation that must divide between entities with different constraints. On considering the entities as two competing agents, the each entity assures to maximize it's efficient by picking suitable applicants. 
+Problem: Los Angeles Homeless Services Authority(LAHSA) and Safe Parking LA(SPLA) are two manjor organizations who are providing shelters to more than 17000 homeless people in Los Angeles. While efforts are being made to provide shelter, efficiently accommodating thousands of people based on the time of requirement, availability over a given month, constraints(such as women only spaces, age limit etc) becomes an impossible tasks to carry out manually. 
 
-Analogy from Aritificial Intelligence:
-The situation is practical use of gaming agents. Gaming agents like Chess playing agents tend to make the right most move considering steps ahead of time to yield maximum scores. An agent during its turn makes a move that maximizes its score, the opponent makes a move that minimizes the score of the agent to the best extent. This is the basis of the popular AI Minmax algorithm that uses alpha-beta pruning in huge search spaces. 
+Goal: The project aims to provide the most Optimal solution in allocating shelter to highest possible number of people. Given the number of available slots, the AI agent allocates shelter between LAHSA and SPLA based on the days that are required, considering the most suitable accommodation one LAHSA and SPLA. 
+
+Solution using MinMax algorithm for Gaming agenets: 
+The situation is practical application of minmax alogorithm. Gaming agents like Chess playing agents tend to make the right most move considering steps ahead of time to yield maximum scores. An agent during its turn makes a move that maximizes its score, the opponent makes a move that minimizes the score of the agent to the best extent. This is the basis of the popular AI Minmax algorithm that uses alpha-beta pruning in huge search spaces. 
 
 The competing agents here are LAHSA and SPLA that are described further below. 
 
@@ -21,7 +23,7 @@ Days of the week needed: 0/1 for each day of the 7 days of the week (Monday-Sund
 Example applicant record: 00001F020NNYY1001000 for applicant id 00001, female, 20 years old, no pets, no medical conditions, with car and driver’s license, who needs housing for Monday and Thursday.
 
 # Allotment constraints: 
-SPLA and LAHSAalternate choosing applicants one by one.  They must choose an  applicant  if there is still a  qualified  oneon the list(no  passing).SPLA applicants must have a car and driver’s license, but no medical conditions.  LAHSA shelter can only serve women over 17 years old without pets. Both SPLA and LAHSA have limited resources that must be used efficiently.  Efficiency is calculated by how many of the spaces are used during the week.  For example, a SPLA parking lot has 10 spacesand can have at most 10*7 days = 70 different applicants for the week. SPLA tries to maximize its efficiency rate.
+SPLA and LAHSA alternate choosing applicants one by one.  They must choose an  applicant  if there is still a  qualified  oneon the list(no  passing).SPLA applicants must have a car and driver’s license, but no medical conditions.  LAHSA shelter can only serve women over 17 years old without pets. Both SPLA and LAHSA have limited resources that must be used efficiently.  Efficiency is calculated by how many of the spaces are used during the week.  For example, a SPLA parking lot has 10 spacesand can have at most 10*7 days = 70 different applicants for the week. SPLA tries to maximize its efficiency rate.
 
 # Input: 
 The file input.txt in the current directory of your program will be formatted as follows: 
